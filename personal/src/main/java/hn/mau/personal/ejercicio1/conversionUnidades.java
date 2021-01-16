@@ -20,7 +20,7 @@ public class conversionUnidades {
         try {
             boolean on = true;
             String option;
-            float value, km, hm, dam, m, dm;
+            float value, km, hm, dam, m, dm, cm, mm;
 
             while (on) {
                 Scanner capturador = new Scanner(System.in, "ISO-8859-1").useDelimiter("\\n");
@@ -38,6 +38,10 @@ public class conversionUnidades {
                 System.out.println(value + " metro(s) hay " + m + " metros");
                 dm = (float) (m / 10.0);
                 System.out.println(value + " metro(s) hay " + dm + " decimetros");
+                cm = (float) (dm / 10.0);
+                System.out.println(value + " metro(s) hay " + cm + " centimetros");
+                mm = (float) (cm / 10.0);
+                System.out.println(value + " metro(s) hay " + cm + " milimetros");
 
                 System.out.println(" presione cualquier tecla para continual , para salir presione x");
                 option = capturador.next();
