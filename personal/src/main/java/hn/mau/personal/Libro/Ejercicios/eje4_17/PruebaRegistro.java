@@ -17,7 +17,7 @@ public class PruebaRegistro {
         try {
             boolean on = true;
             String option;
-            float value, km, hm, dam, m, dm, cm, mm;
+            float value;
 
             while (on) {
                 RegistroCombustible reg1 = new RegistroCombustible();
@@ -33,7 +33,7 @@ public class PruebaRegistro {
 
                 System.out.println(" la cantidad de kilometros por litros son " + reg1.obtenerKmsXLts());
 
-                System.out.println(" presione cualquier tecla para continual , para salir presione x");
+                System.out.println(" presione cualquier tecla para continuar , para salir presione x");
                 option = capturador.next();
 
                 if ("x".equals(option)) {
