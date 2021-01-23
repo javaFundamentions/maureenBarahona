@@ -41,11 +41,17 @@ public class PruebaSalarioEmpleado {
             emp3.setHoraSemanales(capturador.nextDouble());
             System.out.println("Ingrese la tarifa por hora de ese empleado");
             emp3.setTarifaXHora(capturador.nextDouble());
-            
-             System.out.printf("%-20s%-20s%-20s%-20s\n","Empleado","Horas Semanal","Tarifa", "Salario Bruto");
-             emp1.obtenerSalarioBruto();
-             emp2.obtenerSalarioBruto();
-             emp3.obtenerSalarioBruto();
+
+            System.out.printf("%-20s%-20s%-20s%-20s\n", "Empleado", "Horas Semanal", "Tarifa", "Salario Bruto");
+            emp1.obtenerSalarioBruto();
+            emp2.obtenerSalarioBruto();
+            emp3.obtenerSalarioBruto();
+
+            System.out.println(" presione cualquier tecla para continuar , para salir presione x");
+
+            if ("x".equals(capturador.next())) {
+                on = false;
+            }
         }
 
     }
