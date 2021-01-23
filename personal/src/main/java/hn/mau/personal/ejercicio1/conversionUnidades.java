@@ -28,7 +28,7 @@ public class conversionUnidades {
                 System.out.println("Cuantos metros deseas convertir");
                 value = capturador.nextFloat();
 
-                km = value / 1000;
+                km = value * 1000;
                 System.out.println(value + " metro(s) hay " + km + " kilometros");
                 hm = km / 10;
                 System.out.println(value + " metro(s) hay " + hm + " hectometros");
