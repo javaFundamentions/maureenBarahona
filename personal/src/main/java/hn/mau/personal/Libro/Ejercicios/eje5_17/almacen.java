@@ -13,7 +13,6 @@ import java.util.Scanner;
  */
 public class almacen {
 
-    private float costo;
     private float monto_total = 0;
     private int numero_producto;
     private int cantidad_vendida;
